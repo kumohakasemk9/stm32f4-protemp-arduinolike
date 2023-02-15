@@ -1,9 +1,9 @@
 STM32F4XX Arduino like template project
-#####   
+=====   
 This is STM32F4XX project template files to get experience like arduino coding.   
 
 How to use
-#####
+=====
 First you need some missing files. stm32f4xx.h and CMSIS. After downloading,   
 Please modify makefile for correct include path.  
 You have to make include path pointing correct dir to CMSIS includes and stm32f4xx.h.  
@@ -20,7 +20,7 @@ report will contain some useful info. You can watch disassembly and see what's g
 in case of your program not responding.   
 
 License
-#####
+=====
 You are free to destribute, modify without modifying this section.
 Please consider support me on kofi.com https://ko-fi.com/kumohakase
 Licensed under Creative commons CC-BY https://creativecommons.org/licenses/by/4.0/
