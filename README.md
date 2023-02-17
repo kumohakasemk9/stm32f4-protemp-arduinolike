@@ -21,6 +21,6 @@ in case of your program not responding.
 
 License
 =====
-You are free to destribute, modify without modifying this section.
-Please consider support me on kofi.com https://ko-fi.com/kumohakase
+You are free to destribute, modify without modifying this section.  
+Please consider support me on kofi.com https://ko-fi.com/kumohakase  
 Licensed under Creative commons CC-BY https://creativecommons.org/licenses/by/4.0/
