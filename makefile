@@ -6,8 +6,8 @@
 
 
 CXX = arm-none-eabi-g++
-CPPFLAGS = -fno-exceptions -mcpu=cortex-m4 -mfpu=vfpv4-d16 -g3 -I /home/owner/harddisk_home/programs/CMSIS_5-5.7.0/CMSIS/Core/Include -I /home/owner/harddisk_home/programs/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include #You need to make CMSIS path and STM32 header dir pointing correct one.
-OBJS = main.o start.o
+CPPFLAGS = -fno-exceptions -mcpu=cortex-m4 -mfpu=vfpv4-d16 -g3 -I . -I /home/owner/harddisk_home/programs/CMSIS_5-5.7.0/CMSIS/Core/Include -I /home/owner/harddisk_home/programs/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include #You need to make CMSIS path and STM32 header dir pointing correct one.
+OBJS = main.o start.o arduinolike.o
 TARGET = output
 
 all: $(OBJS)
