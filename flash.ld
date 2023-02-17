@@ -6,7 +6,7 @@
 	Please consider support me on kofi.com https://ko-fi.com/kumohakase
 */
 
-
+ENTRY(Reset_Handler);
 MEMORY {
 	/* You need to modify if your target board has different memory map */
 	ROM (rx) : ORIGIN = 0x8000000, LENGTH = 1M
