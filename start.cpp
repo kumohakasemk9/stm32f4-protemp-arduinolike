@@ -8,7 +8,7 @@
 
 #include <stm32f4xx.h>
 
-const extern char *__stack; //Stack top
+const extern uint32_t __stack; //Stack top
 void Reset_Handler();
 //Weak definition for interrupt handlers
 __attribute((interrupt,weak)) void NonMaskableInt_Handler();    /*!< 2 Non Maskable Interrupt                                          */
@@ -107,7 +107,7 @@ __attribute((interrupt,weak)) void FPU_Handler();     /*!< FPU global interrupt 
 //Vector table
 
 __attribute((section(".vects"))) void (*VectorTable[])() = {
-  (void (*)())__stack, //Initial stack pointer value comes first.
+  (void (*)())&__stack, //Initial stack pointer value comes first.
   Reset_Handler,
   NonMaskableInt_Handler,    
   HardFault_Handler,
@@ -204,23 +204,23 @@ __attribute((section(".vects"))) void (*VectorTable[])() = {
 
 void Reset_Handler() {
   //SCB->VTOR = &VectorTable;
-  extern char *__sbss;
-  extern char *__ebss;
-  extern char *__sidata;
-  extern char *__sdata;
-  extern char *__edata;
+  extern const uint32_t  __sbss;
+  extern const uint32_t __ebss;
+  extern const uint32_t  __sidata;
+  extern const uint32_t __sdata;
+  extern const uint32_t __edata;
   extern void setup();
   extern void loop();
-  char *p = __sbss; //Bss start
-  char *e = __ebss; //Bss end
-  char *i = __sidata; //Data start (ROM)
+  char *p = (char*)&__sbss; //Bss start
+  char *e = (char*)&__ebss; //Bss end
+  char *i = (char*)&__sidata; //Data start (ROM)
   /* Zero fill BSS section. */
   while(p < e) {
     *p = 0;
     p++;
   }
-  p = __sdata; //Data start
-  e = __edata; //Data end
+  p = (char*)&__sdata; //Data start
+  e = (char*)&__edata; //Data end
   /* Copy ROM data section into RAM */
   while(p < e) {
     *p = *i;
