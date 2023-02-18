@@ -24,3 +24,81 @@ License
 You are free to destribute, modify without modifying this section.  
 Please consider support me on kofi.com https://ko-fi.com/kumohakase  
 Licensed under Creative commons CC-BY https://creativecommons.org/licenses/by/4.0/
+
+Implement
+=====
+
+- digitalRead() ... false
+- digitalWrite() ... false
+- pinMode() ... false
+
+- analogRead() ... false
+- analogReference() ... false
+- analogWrite() ... false
+
+- analogReadResolution() ... false
+- analogWriteResolution() ... false
+
+- noTone() ... false
+- pulseIn() ... false
+- pulseInLong() ... false
+- shiftIn() ... false
+- shiftOut() ... false
+- tone() ... false
+
+- delay() ... false
+- delayMicroseconds() ... false
+- micros() ... false
+- millis() ... false
+
+- abs() ... false
+- constrain() ... false
+- map() ... false
+- max() ... false
+- min() ... false
+- pow() ... false
+- sq() ... false
+- sqrt() ... false
+
+- cos() ... false
+- sin() ... false
+- tan() ... false
+
+- isAlpha() ... false
+- isAlphaNumeric() ... false
+- isAscii() ... false
+- isControl() ... false
+- isDigit() ... false
+- isGraph() ... false
+- isHexadecimalDigit() ... false
+- isLowerCase() ... false
+- isPrintable() ... false
+- isPunct() ... false
+- isSpace() ... false
+- isUpperCase() ... false
+- isWhiteSpace() ... false
+
+- random() ... false
+- randomSeed() ... false
+
+- bit() ... false
+- bitClear() ... false
+- bitRead() ... false
+- bitSet() ... false
+- bitWrite() ... false
+- highByte() ... false
+- lowByte() ... false
+
+- attachInterrupt() ... false
+- detachInterrupt() ... false
+
+- interrupts() ... false
+- nointerrupts() ... false
+
+- Serial ... false
+- SPI ... false
+- Stream ... false
+- Wire ... false
+
+- Keyboard ... false
+- Mouse ... false
